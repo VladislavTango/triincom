@@ -1,0 +1,6 @@
+@triincom_HostAddress = http://localhost:5128
+
+GET {{triincom_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

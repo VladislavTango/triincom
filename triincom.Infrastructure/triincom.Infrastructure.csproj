@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\triincom.core\triincom.Core.csproj" />
+	<ProjectReference Include="..\triincom.DataPersistence\triincom.DataPersistence.csproj" />
+  </ItemGroup>
+
+</Project>
