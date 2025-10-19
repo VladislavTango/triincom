@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom", "triincom\triincom.csproj", "{49C5DD64-649A-468B-B463-6252E2330783}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -24,6 +24,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Infrastructure", "triincom.Infrastructure\triincom.Infrastructure.csproj", "{85C6310D-5692-4016-907B-E02B6D52347F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41} = {DBEC05AA-1DEE-4E86-97F0-193399F1BE41}
+		{EAD80243-C016-437C-8388-41772EFF8ACF} = {EAD80243-C016-437C-8388-41772EFF8ACF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Tests", "triincom.Tests\triincom.Tests.csproj", "{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{49C5DD64-649A-468B-B463-6252E2330783} = {49C5DD64-649A-468B-B463-6252E2330783}
+		{85C6310D-5692-4016-907B-E02B6D52347F} = {85C6310D-5692-4016-907B-E02B6D52347F}
+		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F} = {D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}
 		{EAD80243-C016-437C-8388-41772EFF8ACF} = {EAD80243-C016-437C-8388-41772EFF8ACF}
 	EndProjectSection
 EndProject
@@ -53,6 +61,10 @@ Global
 		{85C6310D-5692-4016-907B-E02B6D52347F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85C6310D-5692-4016-907B-E02B6D52347F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85C6310D-5692-4016-907B-E02B6D52347F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
