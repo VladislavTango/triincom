@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 using triincom.Core.Entities;
 
 namespace triincom.DataPersistence.AppContext

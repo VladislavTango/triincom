@@ -25,7 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\triincom.Application\triincom.Application.csproj" />
-    <ProjectReference Include="..\triincom.core\triincom.Core.csproj" />
     <ProjectReference Include="..\triincom.DataPersistence\triincom.DataPersistence.csproj" />
     <ProjectReference Include="..\triincom.Infrastructure\triincom.Infrastructure.csproj" />
   </ItemGroup>

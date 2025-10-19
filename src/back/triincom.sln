@@ -7,23 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom", "triincom\triinc
 	ProjectSection(ProjectDependencies) = postProject
 		{85C6310D-5692-4016-907B-E02B6D52347F} = {85C6310D-5692-4016-907B-E02B6D52347F}
 		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F} = {D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41} = {DBEC05AA-1DEE-4E86-97F0-193399F1BE41}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Application", "triincom.Application\triincom.Application.csproj", "{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{85C6310D-5692-4016-907B-E02B6D52347F} = {85C6310D-5692-4016-907B-E02B6D52347F}
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41} = {DBEC05AA-1DEE-4E86-97F0-193399F1BE41}
 		{EAD80243-C016-437C-8388-41772EFF8ACF} = {EAD80243-C016-437C-8388-41772EFF8ACF}
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Core", "triincom.core\triincom.Core.csproj", "{DBEC05AA-1DEE-4E86-97F0-193399F1BE41}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.DataPersistence", "triincom.DataPersistence\triincom.DataPersistence.csproj", "{EAD80243-C016-437C-8388-41772EFF8ACF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Infrastructure", "triincom.Infrastructure\triincom.Infrastructure.csproj", "{85C6310D-5692-4016-907B-E02B6D52347F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41} = {DBEC05AA-1DEE-4E86-97F0-193399F1BE41}
 		{EAD80243-C016-437C-8388-41772EFF8ACF} = {EAD80243-C016-437C-8388-41772EFF8ACF}
 	EndProjectSection
 EndProject
@@ -34,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Tests", "triincom.
 		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F} = {D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}
 		{EAD80243-C016-437C-8388-41772EFF8ACF} = {EAD80243-C016-437C-8388-41772EFF8ACF}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "triincom.Core", "triincom.Core\triincom.Core.csproj", "{FF8D7C27-4571-4289-9E6E-5B7E5912446D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +46,6 @@ Global
 		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0B9A30B-710D-4BED-AB5C-52E0D28AFA4F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBEC05AA-1DEE-4E86-97F0-193399F1BE41}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EAD80243-C016-437C-8388-41772EFF8ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EAD80243-C016-437C-8388-41772EFF8ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD80243-C016-437C-8388-41772EFF8ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,6 +58,10 @@ Global
 		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05F1A9D5-95B8-4D8B-BFF0-DE72E67C3CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF8D7C27-4571-4289-9E6E-5B7E5912446D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF8D7C27-4571-4289-9E6E-5B7E5912446D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF8D7C27-4571-4289-9E6E-5B7E5912446D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF8D7C27-4571-4289-9E6E-5B7E5912446D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

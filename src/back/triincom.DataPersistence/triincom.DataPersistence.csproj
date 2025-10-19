@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\triincom.core\triincom.Core.csproj" />
+    <ProjectReference Include="..\triincom.Core\triincom.Core.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\triincom.core\triincom.Core.csproj" />
-	<ProjectReference Include="..\triincom.DataPersistence\triincom.DataPersistence.csproj" />
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\triincom.Core\triincom.Core.csproj" />
+  </ItemGroup>
 </Project>

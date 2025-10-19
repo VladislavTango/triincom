@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./SRC/back
+      dockerfile: Dockerfile
+    container_name: triincom-backend
+    ports:
+      - "7225:7225"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "http://+:7225"
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=triincom;Username=postgres;Password=o4enclojniparol222"
+    depends_on:
+      - postgres
+    networks:
+      - triincom-network
+
+  postgres:
+    image: postgres:16
+    container_name: triincom-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: triincom
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: o4enclojniparol222
+    ports:
+      - "5432:5432"
+    networks:
+      - triincom-network
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  triincom-network:
+    driver: bridge
+
+volumes:
+  pgdata:
