@@ -1,9 +1,21 @@
 version: '3.8'
 
 services:
+  frontend:
+    build:
+      context: ./src/front 
+      dockerfile: Dockerfile
+    container_name: triincom-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    networks:
+      - triincom-network
+
   backend:
     build:
-      context: ./SRC/back
+      context: ./src/back
       dockerfile: Dockerfile
     container_name: triincom-backend
     ports:

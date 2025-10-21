@@ -88,6 +88,8 @@ namespace triincom.Infrastructure.Repositories
                 query = query.Where(x => x.TermValue <= filter.MaxTerm);
             }
 
+            query = query.OrderByDescending(x => x.CreatedAt);
+
             var totalCount = await query.CountAsync();
 
             if (filter.PageNumber.HasValue && filter.PageSize.HasValue)
